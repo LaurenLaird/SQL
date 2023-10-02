@@ -33,4 +33,42 @@ FROM superstore
 WHERE average_rating
 ORDER BY average_rating desc;
 
+#Retreaving the price and name of each item under subcategory 'Kitchen Supplies'
+SELECT (price),category, Item_name
+FROM superstore
+WHERE category='Kitchen Supplies' ;
+
+
+
+# Using SELECT AVG to get the average price of 'Kitchen Supplies'
+SELECT AVG (price),category
+FROM superstore
+WHERE category='Kitchen Supplies' ;
+
+
+
+#Retreaving the SUM of 'Kitchen Supplies'
+SELECT SUM (price),category
+FROM superstore
+WHERE category='Kitchen Supplies' ;
+
+
+
+# Retreaving the sum of each subcategory
+SELECT SUM (price), category
+FROM superstore
+WHERE category='Electronics' ;
+
+SELECT SUM (price),category
+FROM superstore
+WHERE category='Appliances' ;
+
+SELECT SUM (price), category
+FROM superstore
+WHERE category='Kitchen Supplies' ;
+
+SELECT SUM (price), category
+FROM superstore
+WHERE category='Kitchen Supplies' ;
+
 
