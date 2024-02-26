@@ -1,5 +1,5 @@
 #1. How many orders were placed in January?
-Remember to filter out the blank and incorrect order IDs like we did in the "dealing with messy data" section of the previous lesson!
+Remember to filter out the blank and incorrect order IDs.
 
 SELECT COUNT(orderid)
 FROM BIT_DB.JanSales
